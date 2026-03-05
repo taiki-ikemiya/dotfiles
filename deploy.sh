@@ -20,3 +20,17 @@ for pkg in "${STOW_PACKAGES[@]}"; do
 done
 
 echo "デプロイ完了: 以下のパッケージをデプロイしました: ${STOW_PACKAGES[*]}"
+
+# --- フォントインストール (macOS only) ---
+FONTS=(font-geist-mono-nerd-font)
+
+if [[ "$(uname)" == "Darwin" ]] && command -v brew &>/dev/null; then
+  for font in "${FONTS[@]}"; do
+    if brew list --cask "$font" &>/dev/null; then
+      echo "フォント既存: $font"
+    else
+      echo "フォントをインストール: $font"
+      brew install --cask "$font"
+    fi
+  done
+fi
