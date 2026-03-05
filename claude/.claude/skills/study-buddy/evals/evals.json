@@ -1,0 +1,44 @@
+{
+  "skill_name": "study-buddy",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "Transformerのself-attentionの仕組みを教えて",
+      "expected_output": "テンプレート1（概念説明）に従い、Q/K/Vの仕組みを簡潔にソース付きで説明",
+      "files": [],
+      "assertions": [
+        {"name": "conciseness", "check": "本文800字以内"},
+        {"name": "template_compliance", "check": "テンプレート1のセクション構成"},
+        {"name": "sources_included", "check": "ソースセクションあり"},
+        {"name": "one_line_summary", "check": "一言まとめあり"},
+        {"name": "technical_accuracy", "check": "Q,K,V,Softmax等の説明が正確"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "共通鍵暗号と公開鍵暗号の違いは？",
+      "expected_output": "テンプレート2（比較）に従い、比較表と選び方の目安を簡潔にソース付きで説明",
+      "files": [],
+      "assertions": [
+        {"name": "conciseness", "check": "本文800字以内"},
+        {"name": "template_compliance", "check": "テンプレート2のセクション構成と比較表"},
+        {"name": "sources_included", "check": "ソースセクションあり"},
+        {"name": "one_line_summary", "check": "一言まとめあり"},
+        {"name": "selection_guide", "check": "選び方の目安あり"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "情報処理安全確保支援士でよく出るXSS（クロスサイトスクリプティング）のポイントをまとめて",
+      "expected_output": "テンプレート3（試験対策）に従い、出題傾向と間違えやすい点を簡潔にソース付きで説明",
+      "files": [],
+      "assertions": [
+        {"name": "conciseness", "check": "本文800字以内"},
+        {"name": "template_compliance", "check": "テンプレート3のセクション構成"},
+        {"name": "sources_included", "check": "ソースセクションあり"},
+        {"name": "exam_frequency", "check": "出題傾向・頻出度あり"},
+        {"name": "common_mistakes", "check": "間違えやすい点あり"}
+      ]
+    }
+  ]
+}

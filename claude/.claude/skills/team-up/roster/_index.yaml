@@ -1,0 +1,33 @@
+members:
+  - name: backend-engineer
+    file: backend-engineer.md
+    tags: [implementation, api, database, python]
+    summary: バックエンド実装。API設計、DB操作、パフォーマンス最適化
+  - name: frontend-engineer
+    file: frontend-engineer.md
+    tags: [implementation, ui, react, typescript]
+    summary: フロントエンド実装。UI構築、状態管理、レスポンシブ対応
+  - name: code-reviewer
+    file: code-reviewer.md
+    tags: [review, quality, architecture]
+    summary: コードレビュー。設計妥当性、バグ検出、改善提案
+  - name: technical-writer
+    file: technical-writer.md
+    tags: [documentation, specification, communication]
+    summary: ドキュメント作成。仕様書、設計書、ユーザーガイド
+  - name: research-analyst
+    file: research-analyst.md
+    tags: [research, analysis, comparison, investigation]
+    summary: 技術調査・分析。ライブラリ比較、技術動向、PoC設計
+  - name: test-engineer
+    file: test-engineer.md
+    tags: [testing, quality, automation]
+    summary: テスト設計・実装。テスト戦略、ケース設計、自動化
+  - name: security-auditor
+    file: security-auditor.md
+    tags: [security, audit, vulnerability]
+    summary: セキュリティ監査。脆弱性チェック、権限設計レビュー
+  - name: ux-reviewer
+    file: ux-reviewer.md
+    tags: [ux, usability, accessibility]
+    summary: UXレビュー。ユーザビリティ評価、アクセシビリティチェック
