@@ -2,7 +2,7 @@
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-STOW_PACKAGES=(claude tmux)
+STOW_PACKAGES=(claude tmux ghostty)
 
 cd "$SCRIPT_DIR"
 

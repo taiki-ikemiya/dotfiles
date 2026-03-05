@@ -1,0 +1,33 @@
+theme = Tomorrow Night Bright
+
+background-opacity = 1
+maximize = false
+window-decoration = true
+window-padding-x = 5
+window-padding-y = 2
+
+cursor-style = bar
+
+scrollback-limit = 10000000
+
+font-family = 0xProto
+font-family-bold = 0xProto
+font-family-italic = 0xProto
+font-family-bold-italic = 0xProto
+font-size = 13.5
+font-style = Regular
+font-style-bold = Bold
+font-style-italic = Italic
+font-style-bold-italic = Bold Italic
+adjust-cell-height = 0
+font-thicken = false
+font-feature = -dlig
+
+# Japanese font (Zen Maru Gothic)
+font-codepoint-map = U+3000-U+30FF,U+4E00-U+9FFF,U+FF00-U+FFEF,U+3400-U+4DBF=Zen Maru Gothic
+
+keybind = cmd+enter=text:\x1b:lua RunCurrentFile()\x0d
+keybind = cmd+j=text:\x1b:ToggleTerm\x0d
+keybind = cmd+b=text:\x1b:Neotree toggle\x0d
+
+command = /bin/zsh -l -c "exec ~/.config/tmux/init-session.sh"
