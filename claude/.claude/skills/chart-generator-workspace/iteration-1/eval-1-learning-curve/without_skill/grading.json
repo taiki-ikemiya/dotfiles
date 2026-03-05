@@ -1,0 +1,12 @@
+{
+  "eval_id": 1,
+  "run_type": "without_skill",
+  "expectations": [
+    {"text": "PNG ファイルが1つ以上生成されている", "passed": true, "evidence": "learning_curve.png が正常に生成された"},
+    {"text": "スクリプト実行が正常終了", "passed": true, "evidence": "exit code 0"},
+    {"text": "日本語タイトルが文字化けせずに表示されている", "passed": true, "evidence": "「exp002 学習曲線」が正しく表示"},
+    {"text": "train/val loss の2系列が描画されている", "passed": true, "evidence": "青実線と赤破線の2系列"},
+    {"text": "第2Y軸に val accuracy が描画されている", "passed": true, "evidence": "右Y軸に Accuracy 表示あり"},
+    {"text": "best epoch=5 の縦線マーカーがある", "passed": true, "evidence": "x=5 に灰色縦線あり"}
+  ]
+}

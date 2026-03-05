@@ -1,0 +1,11 @@
+{
+  "eval_id": 2,
+  "eval_name": "confusion-matrix-and-bar",
+  "prompt": "テスト結果の混同行列を作って。OK→OK が 190, OK→NG が 10, NG→OK が 5, NG→NG が 95。あと、3つの実験の F1-Score を比較する棒グラフもお願い。exp001=0.88, exp002=0.92, exp003=0.90 で、exp002 をハイライトして。",
+  "assertions": [
+    {"text": "PNG ファイルが2つ生成されている（混同行列 + 棒グラフ）", "type": "file_exists"},
+    {"text": "スクリプト実行が正常終了", "type": "execution"},
+    {"text": "混同行列に正しい数値 (190, 10, 5, 95) が表示されている", "type": "visual"},
+    {"text": "棒グラフで exp002 がハイライト色で表示されている", "type": "visual"}
+  ]
+}

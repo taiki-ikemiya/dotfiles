@@ -1,0 +1,12 @@
+{
+  "eval_id": 3,
+  "eval_name": "grouped-bar-presentation",
+  "prompt": "4つのバックボーン（ResNet50, EfficientNet-B2, ConvNeXt-T, EVA02-S）の Accuracy と Recall(NG) をグループ化棒グラフで比較して。値は Accuracy=[0.85,0.90,0.93,0.95], Recall(NG)=[0.78,0.86,0.91,0.94]。スライド用のスタイルでお願い。",
+  "assertions": [
+    {"text": "PNG ファイルが1つ生成されている", "type": "file_exists"},
+    {"text": "スクリプト実行が正常終了", "type": "execution"},
+    {"text": "presentation スタイルの配色が使われている", "type": "visual"},
+    {"text": "Accuracy と Recall(NG) の2グループが表示されている", "type": "visual"},
+    {"text": "フォントサイズが大きめ（スライド向け）", "type": "visual"}
+  ]
+}

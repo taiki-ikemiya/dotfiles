@@ -1,0 +1,10 @@
+{
+  "eval_id": 2,
+  "run_type": "with_skill",
+  "expectations": [
+    {"text": "PNG ファイルが2つ生成されている", "passed": true, "evidence": "confusion_matrix.png と f1_comparison.png の2ファイル生成"},
+    {"text": "スクリプト実行が正常終了", "passed": true, "evidence": "exit code 0、2 charts generated"},
+    {"text": "混同行列に正しい数値が表示されている", "passed": true, "evidence": "190, 10, 5, 95 がセル内に正しく表示"},
+    {"text": "棒グラフで exp002 がハイライト色で表示されている", "passed": true, "evidence": "exp002 が赤色（HIGHLIGHT_COLOR）、他は青色"}
+  ]
+}

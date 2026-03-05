@@ -1,0 +1,13 @@
+{
+  "eval_id": 1,
+  "eval_name": "learning-curve",
+  "prompt": "exp002 の学習結果を可視化して。train loss が [1.2, 0.8, 0.5, 0.35, 0.25] で val loss が [1.3, 0.85, 0.6, 0.48, 0.42]、val accuracy は [0.6, 0.72, 0.80, 0.85, 0.87] だった。best epoch は 5。",
+  "assertions": [
+    {"text": "PNG ファイルが1つ以上生成されている", "type": "file_exists"},
+    {"text": "学習曲線のスクリプト実行が正常終了（exit code 0）", "type": "execution"},
+    {"text": "日本語タイトルが文字化けせずに表示されている", "type": "visual"},
+    {"text": "train/val loss の2系列が描画されている", "type": "visual"},
+    {"text": "第2Y軸に val accuracy が描画されている", "type": "visual"},
+    {"text": "best epoch=5 の縦線マーカーがある", "type": "visual"}
+  ]
+}

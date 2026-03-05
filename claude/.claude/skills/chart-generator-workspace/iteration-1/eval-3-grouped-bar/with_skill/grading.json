@@ -1,0 +1,11 @@
+{
+  "eval_id": 3,
+  "run_type": "with_skill",
+  "expectations": [
+    {"text": "PNG ファイルが1つ生成されている", "passed": true, "evidence": "backbone_comparison.png が生成"},
+    {"text": "スクリプト実行が正常終了", "passed": true, "evidence": "exit code 0"},
+    {"text": "presentation スタイルの配色が使われている", "passed": true, "evidence": "テラコッタ系（#C07A5A）+ グリーン系配色で pptx-builder と調和"},
+    {"text": "Accuracy と Recall(NG) の2グループが表示されている", "passed": true, "evidence": "凡例に Accuracy と Recall(NG) が表示、各バックボーンに2本ずつ棒"},
+    {"text": "フォントサイズが大きめ（スライド向け）", "passed": true, "evidence": "タイトル18pt、ラベル14ptの presentation スタイル適用"}
+  ]
+}
