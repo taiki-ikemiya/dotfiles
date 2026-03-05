@@ -30,4 +30,6 @@ keybind = cmd+enter=text:\x1b:lua RunCurrentFile()\x0d
 keybind = cmd+j=text:\x1b:ToggleTerm\x0d
 keybind = cmd+b=text:\x1b:Neotree toggle\x0d
 
+macos-option-as-alt = true
+
 command = /bin/zsh -l -c "exec ~/.config/tmux/init-session.sh"
