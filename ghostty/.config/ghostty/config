@@ -10,10 +10,10 @@ cursor-style = bar
 
 scrollback-limit = 10000000
 
-font-family = 0xProto
-font-family-bold = 0xProto
-font-family-italic = 0xProto
-font-family-bold-italic = 0xProto
+font-family = GeistMono Nerd Font
+font-family-bold = GeistMono Nerd Font
+font-family-italic = GeistMono Nerd Font
+font-family-bold-italic = GeistMono Nerd Font
 font-size = 13.5
 font-style = Regular
 font-style-bold = Bold
